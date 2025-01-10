@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-# affiche les ports en écoute
-
-sudo netstat -tunlp
+# only shows listening sockets
+netstat -tulp
+# shows the PID and name of the program
+# to which each socket belongs
+netstat -lxp
