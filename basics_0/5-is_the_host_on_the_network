@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# check if non argv is passed in script
+if [ "$#" -ne 1 ]; then
+# if is valid
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+#if is error
+    exit 1
+fi
+
+# if is success
+ping -c 5 "$1"
