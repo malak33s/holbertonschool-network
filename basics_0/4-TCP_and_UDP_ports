@@ -1,2 +1,4 @@
-netstat -tulp
-netstat -lxp
+#!/usr/bin/env bash
+# affiche les ports en écoute
+
+sudo netstat -tunlp
